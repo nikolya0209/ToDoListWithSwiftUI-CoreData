@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Environment(\.managedObjectContext) var managedObjectContext
+    @State private var newOrder = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List {
+            Section(header: Text("NewOrder")) {
+                HStack {
+                    TextField("New order", text: $newOrder)
+                }
+            }
+        }
     }
 }
 
