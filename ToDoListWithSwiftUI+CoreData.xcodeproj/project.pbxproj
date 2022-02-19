@@ -13,6 +13,7 @@
 		5260F90D27C14DD3002F84FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5260F90C27C14DD3002F84FB /* Assets.xcassets */; };
 		5260F91027C14DD3002F84FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5260F90F27C14DD3002F84FB /* Preview Assets.xcassets */; };
 		5260F91327C14DD3002F84FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5260F91127C14DD3002F84FB /* LaunchScreen.storyboard */; };
+		5260F91F27C14EAA002F84FB /* CoreDataModelOrder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5260F91D27C14EAA002F84FB /* CoreDataModelOrder.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5260F90F27C14DD3002F84FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5260F91227C14DD3002F84FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5260F91427C14DD3002F84FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5260F91E27C14EAA002F84FB /* CoreDataModelOrder.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModelOrder.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				5260F90C27C14DD3002F84FB /* Assets.xcassets */,
 				5260F91127C14DD3002F84FB /* LaunchScreen.storyboard */,
 				5260F91427C14DD3002F84FB /* Info.plist */,
+				5260F91D27C14EAA002F84FB /* CoreDataModelOrder.xcdatamodeld */,
 				5260F90E27C14DD3002F84FB /* Preview Content */,
 			);
 			path = "ToDoListWithSwiftUI+CoreData";
@@ -148,6 +151,7 @@
 				5260F90727C14DD2002F84FB /* AppDelegate.swift in Sources */,
 				5260F90927C14DD2002F84FB /* SceneDelegate.swift in Sources */,
 				5260F90B27C14DD2002F84FB /* ContentView.swift in Sources */,
+				5260F91F27C14EAA002F84FB /* CoreDataModelOrder.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +349,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5260F91D27C14EAA002F84FB /* CoreDataModelOrder.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5260F91E27C14EAA002F84FB /* CoreDataModelOrder.xcdatamodel */,
+			);
+			currentVersion = 5260F91E27C14EAA002F84FB /* CoreDataModelOrder.xcdatamodel */;
+			path = CoreDataModelOrder.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5260F8FB27C14DD2002F84FB /* Project object */;
 }
