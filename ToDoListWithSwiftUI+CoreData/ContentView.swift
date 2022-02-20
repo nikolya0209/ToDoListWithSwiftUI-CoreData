@@ -10,11 +10,12 @@ import SwiftUI
 struct ContentView: View {
     
     @Environment(\.managedObjectContext) var managedObjectContext
-    @FetchRequest(entity: Order.entity(),
-                  sortDescriptors: [
-        NSSortDescriptor(keyPath: \Order.drink,
-                         ascending: true)
-    ]) var orders: FetchedResults<Order>
+//    @FetchRequest(entity: Order.entity(),
+//                  sortDescriptors: [
+//        NSSortDescriptor(keyPath: \Order.drink,
+//                         ascending: true)
+//    ]) var orders: FetchedResults<Order>
+    @FetchRequest(fetchRequest: Order.getAllOrders()) var orders: FetchedResults<Order>
     
     @State private var newOrder = ""
     
@@ -41,7 +42,7 @@ struct ContentView: View {
                 }
                 Section(header: Text("Your Orders")) {
                     ForEach(self.orders, id: \.self) { order in
-                        OderItemView(drink: order.drink ?? "choose drink", createdAt: "\(String(describing: order.createdAt))")
+                        OderItemView(drink: order.drink , createdAt: "\(String(describing: order.createdAt))")
                     }.onDelete(perform: removeOrder)
                 }
             }.navigationBarTitle(Text("Order View"))
